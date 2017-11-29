@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.visualization {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.equal-column {
+  float: left;
+  width: 50%;
+}
+
+.Collapsible {
+  margin-bottom: 15px;
+}
+
+.Collapsible__trigger {
+  display: block;
+  line-height: 45px;
+  background: rgb(0, 188, 212);
+  color: white;
+  padding: 0 15px;
+  border-radius: 5px;  
+}
+
+.Collapsible__contentInner::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.screenshots {
+  margin-top: 100px;
+}
+
+.recharts-default-legend {
+  padding-left: 20px !important;
+}
+
+.custom-tooltip {
+  text-align: left;
+}
