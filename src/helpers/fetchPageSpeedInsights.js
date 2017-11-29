@@ -9,8 +9,14 @@ const fetchPageSpeedInsights = async (site, type) => {
   
   const [error, result] = await to(fetch(api));
 
-  if (error || result.status !== 200) {
+  if (error) {
     console.log('error: ', error);
+
+    return null;
+  }
+
+  if (result.status !== 200) {
+    console.log('error: ', result.error.message);
 
     return null;
   }
