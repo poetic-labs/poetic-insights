@@ -15,8 +15,10 @@ const fetchPageSpeedInsights = async (site, type) => {
     return null;
   }
 
+  const jsonResult = await result.json();
+
   if (result.status !== 200) {
-    console.log('error: ', result.error.message);
+    console.log('error: ', jsonResult.error.message);
 
     return null;
   }
